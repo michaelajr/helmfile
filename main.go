@@ -329,6 +329,10 @@ func main() {
 					Value: 0,
 					Usage: "output NUM lines of context around changes",
 				},
+				cli.BoolFlag{
+					Name:  "detailed-exitcode",
+					Usage: "return a non-zero exit code 2 instead of 0 when there were changes detected AND the changes are synced successfully",
+				},
 				cli.StringFlag{
 					Name:  "args",
 					Value: "",
